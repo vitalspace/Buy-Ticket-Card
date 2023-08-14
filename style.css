@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+  padding: 0%;
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: #e3e2f2;
+    font-weight: 700;
+    color: #15143e;
+    font-family: sans-serif;
+
+    > article {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      padding: 2em;
+      border-radius: 0.5em;
+      box-shadow: 0 0 5px #ccc;
+      margin: 0 2em;
+
+      & header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        > span {
+          font-size: 10px;
+        }
+        > h1 {
+          font-size: 22px;
+        }
+      }
+
+      & main {
+        & table {
+          width: 100%;
+          text-align: left;
+
+          & tr > th {
+            font-size: 12px;
+            padding: 0.25em 0;
+          }
+          & tr > td {
+            font-size: 16px;
+            padding: 0.25em 0;
+          }
+        }
+      }
+
+      & footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        & p {
+          font-size: 10px;
+        }
+
+        & button {
+          width: 10em;
+          border: none;
+          padding: 1em 2em;
+          color: white;
+          background: #090954;
+          border-radius: 0.25em;
+          cursor: pointer;
+          transition: 0.2s;
+          &:hover {
+            background: #74748c;
+          }
+        }
+      }
+      @media (width >= 768px) {
+        width: 20%;
+        margin: 0%;
+      }
+    }
+  }
+}
